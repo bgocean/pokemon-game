@@ -1,10 +1,16 @@
-import HeaderBlock from "./components/HeaderBlock";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Layout from "./components/Layout";
+import bg1IMG from "./assets/bg1.jpg";
 
 const App = () => {
   return (
     <>
-      <HeaderBlock title="This is new Title" descr="This is new description!" />
-      <HeaderBlock title="This is new Title" hideBackground />
+      <Header title="This is title" descr="This is description!" />
+      <Layout title="This is Layout" descr="Some text.." urlBg={bg1IMG} />
+      <Layout title="This is Layout" descr="Some text.." colorBg={"red"} />
+      <Layout title="This is Layout" descr="Some text.." urlBg={bg1IMG} />
+      <Footer />
     </>
   );
 };
